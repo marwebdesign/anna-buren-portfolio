@@ -22,10 +22,10 @@ export const Navbar = () => {
           toggle={setOpenNavbar} />
       </HamburgerButton>
       <Menu isOpen={openNavbar}>
-        <ul><NavLink to="/" onClick={closeSideBar} style={({ isActive }) => ({ fontWeight: isActive ? '600' : '400' })}> HOME</NavLink></ul>
-        <ul><NavLink to="/about" onClick={closeSideBar} style={({ isActive }) => ({ fontWeight: isActive ? '600' : '400' })}> ABOUT</NavLink></ul>
-        <ul><NavLink to="/portfolio" onClick={closeSideBar} style={({ isActive }) => ({ fontWeight: isActive ? '600' : '400' })}> PORTFOLIO</NavLink></ul>
-        <ul><NavLink to="/contact" onClick={closeSideBar} style={({ isActive }) => ({ fontWeight: isActive ? '600' : '400' })}> CONTACT</NavLink></ul>
+        <ul><NavLink to="/" onClick={closeSideBar} style={({ isActive }) => ({ fontWeight: isActive ? '600' : '500' })}> HOME</NavLink></ul>
+        <ul><NavLink to="/about" onClick={closeSideBar} style={({ isActive }) => ({ fontWeight: isActive ? '600' : '500' })}> ABOUT</NavLink></ul>
+        <ul><NavLink to="/portfolio" onClick={closeSideBar} style={({ isActive }) => ({ fontWeight: isActive ? '600' : '500' })}> PORTFOLIO</NavLink></ul>
+        <ul><NavLink to="/contact" onClick={closeSideBar} style={({ isActive }) => ({ fontWeight: isActive ? '600' : '500' })}> CONTACT</NavLink></ul>
       </Menu>
 
     </Nav>

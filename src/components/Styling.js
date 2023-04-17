@@ -15,7 +15,7 @@ export const Devices = {
 // NAVBAR STYLING
 export const Nav = styled.div`
   overflow: hidden;
-  background-color: #CEE5D0;
+  background-color: black;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -35,9 +35,12 @@ export const Nav = styled.div`
   }
   }
   a:hover {
-  color: black;
+  color: white;
   transform: scale(1.1);
-  transition: 0.3s;
+  transition: 0.2s;
+  }
+  a:visited {
+    color: white
   }
 `
 export const Navtext = styled.h2`
@@ -50,10 +53,10 @@ color: blue;
   }
 `
 export const Menu = styled.div`
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-right: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 25px;
   
   @media (max-width: 668px) {
     flex-direction: column;
@@ -68,10 +71,11 @@ export const Menu = styled.div`
 `
 export const HamburgerButton = styled.div`
   display: none;
-  color: black; 
+  color: white; 
   margin: 10px;
   @media (max-width: 668px){
   display: flex;
+  justify-content: flex-end;
   }
 `
 // STARTPAGE STYLING
@@ -82,5 +86,52 @@ color: green;
   } 
   @media ${Devices.laptop} {
 color: blue;
+  }
+`
+
+// CONTACT STYLING
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+`
+export const Input = styled.input`
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  color: gray;
+  background: papayawhip;
+  border: none;
+  border-radius: 3px;
+`
+export const Inputmessage = styled.input`
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0.5em;
+  color: gray;
+  background: papayawhip;
+  border: none;
+  border-radius: 3px;
+`
+
+export const Label = styled.label`
+  display: flex;
+  flex-direction: column;
+`
+export const SubmitButton = styled.button`
+background-color: #ECB390;
+border: none;
+font-size: 13px;
+border-radius: 10px;
+padding: 5px 8px;
+margin: 10px 0px;
+width: 100px;
+@media (min-width: 668px) and (max-width: 1024px) {
+  font-size: 15px;
+  }
+  @media (min-width: 1025px) {
+    font-size: 17px;
   }
 `
