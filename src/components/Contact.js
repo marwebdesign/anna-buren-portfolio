@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react'
-import { Thanks } from 'components/Thanks'
+// import { Thanks } from 'components/Thanks'
 import {
   Input,
   Label,
@@ -26,7 +26,7 @@ export const Contact = () => {
           <Label>Your message:
             <Input type="text" name="name" required />
           </Label>
-          <Input type="hidden" name="_next" value={`https://annaburen-portfolio.netlify.app/components/${Thanks.js}`} />
+          {/* <Input type="hidden" name="_next" value="localhost:3000/Thanks.js" /> */}
           <SubmitButton type="submit">Send</SubmitButton>
         </Form>
       </Formwrapper>

@@ -147,6 +147,7 @@ border-radius: 10px;
 padding: 5px 8px;
 margin: 10px 0px;
 width: 100px;
+cursor: pointer;
 @media (min-width: 668px) and (max-width: 1024px) {
   font-size: 15px;
   }
