@@ -12,6 +12,16 @@ export const Devices = {
   desktop: `(min-width: ${sizes.desktop})`
 };
 
+export const Outerwrapper = styled.div`
+    display: flex;
+    background-color: lightcoral;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+`
+
 // NAVBAR STYLING
 export const Nav = styled.div`
   overflow: hidden;
@@ -49,7 +59,7 @@ color: red;
 color: green;
   } 
   @media ${Devices.laptop} {
-color: blue;
+color: white;
   }
 `
 export const Menu = styled.div`
@@ -91,13 +101,22 @@ color: blue;
 
 // CONTACT STYLING
 export const Form = styled.form`
+  /* display: flex;
+  flex-direction: column; */
+
+`
+export const Formwrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 40%;
+  align-items: center;
+  width: 30%;
+  border: 2px tomato solid;
+  padding: 15px;
+  border-radius: 7px;
 `
 export const Input = styled.input`
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   padding: 10px;
   margin: 10px;
   color: gray;
@@ -106,8 +125,8 @@ export const Input = styled.input`
   border-radius: 3px;
 `
 export const Inputmessage = styled.input`
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   padding: 10px;
   margin: 0.5em;
   color: gray;
