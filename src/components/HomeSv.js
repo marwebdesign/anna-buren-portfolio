@@ -1,7 +1,7 @@
 import React from 'react'
 import { StartpageHeader } from './Styling'
 
-export const Home = () => {
+export const HomeSv = () => {
   return (
     <div>
       <StartpageHeader>STARTSIDA</StartpageHeader>

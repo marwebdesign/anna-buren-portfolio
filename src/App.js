@@ -1,27 +1,28 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Navbar } from 'components/Navbar';
-import { Home } from 'components/Home'
-import { About } from 'components/About';
-import { Portfolio } from 'components/Portfolio';
-import { Contact } from 'components/Contact';
+import { Main } from 'components/Main';
+import { MainSv } from 'components/MainSv';
 import { Footer } from 'components/Footer';
+// import { Navbar } from 'components/Navbar';
+// import { Home } from 'components/Home'
+// import { About } from 'components/About';
+// import { Portfolio } from 'components/Portfolio';
+// import { Contact } from 'components/Contact';
+// import { Footer } from 'components/Footer';
 
-export const App = () => {
+export const App = (props) => {
+  // if (props.language === 'ENG') {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/" element={<HomeSv />} />
-        <Route path="/about" element={<AboutSv />} />
-        <Route path="/portfolio" element={<PortfolioSv />} />
-        <Route path="/contact" element={<ContactSv />} /> */}
-      </Routes>
+    <>
+      <Main />
       <Footer />
-    </BrowserRouter>
+    </>
   );
+  //   } else if (props.language === 'SWE') {
+  //     return (
+  //       <>
+  //         <MainSv />
+  //         <Footer />
+  //       </>
+  //     );
+  //   }
 }

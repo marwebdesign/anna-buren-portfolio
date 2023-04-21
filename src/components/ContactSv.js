@@ -11,7 +11,7 @@ import {
   SubmitButton
 } from './Styling'
 
-export const Contact = () => {
+export const ContactSv = () => {
   return (
     <Outerwrapper>
       <StartpageHeader>KONTAKT</StartpageHeader>

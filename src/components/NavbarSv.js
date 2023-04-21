@@ -8,7 +8,7 @@ import {
   Navtext
 } from './Styling';
 
-export const Navbar = () => {
+export const NavbarSv = () => {
   const [openNavbar, setOpenNavbar] = useState(false)
   const closeSideBar = () => { setOpenNavbar(false) }
   return (
