@@ -5,7 +5,7 @@ import { Home } from 'components/Home'
 import { About } from 'components/About';
 import { Portfolio } from 'components/Portfolio';
 import { Contact } from 'components/Contact';
-import { Thanks } from 'components/Thanks';
+import { Footer } from 'components/Footer';
 
 export const App = () => {
   return (
@@ -16,8 +16,12 @@ export const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/thanks" element={<Thanks />} />
+        {/* <Route path="/" element={<HomeSv />} />
+        <Route path="/about" element={<AboutSv />} />
+        <Route path="/portfolio" element={<PortfolioSv />} />
+        <Route path="/contact" element={<ContactSv />} /> */}
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

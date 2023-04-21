@@ -14,7 +14,6 @@ export const Devices = {
 
 export const Outerwrapper = styled.div`
     display: flex;
-    background-color: lightcoral;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -27,6 +26,7 @@ export const Nav = styled.div`
   overflow: hidden;
   background-color: black;
   width: 100vw;
+  border-bottom: 4px white solid;
   display: flex;
   flex-direction: column;
   @media ${Devices.tablet} {
@@ -95,7 +95,7 @@ color: red;
 color: green;
   } 
   @media ${Devices.laptop} {
-color: blue;
+color: black;
   }
 `
 
@@ -107,16 +107,15 @@ export const Form = styled.form`
 `
 export const Formwrapper = styled.div`
   display: flex;
+  background-color: #F5BA55;
   flex-direction: column;
   align-items: center;
   width: 30%;
-  border: 2px tomato solid;
+  border: 2px white solid;
   padding: 15px;
   border-radius: 7px;
 `
 export const Input = styled.input`
-  /* display: flex;
-  flex-direction: column; */
   padding: 10px;
   margin: 10px;
   color: gray;
@@ -125,8 +124,6 @@ export const Input = styled.input`
   border-radius: 3px;
 `
 export const Inputmessage = styled.input`
-  /* display: flex;
-  flex-direction: column; */
   padding: 10px;
   margin: 0.5em;
   color: gray;
@@ -148,10 +145,15 @@ padding: 5px 8px;
 margin: 10px 0px;
 width: 100px;
 cursor: pointer;
-@media (min-width: 668px) and (max-width: 1024px) {
+@media  ${Devices.tablet} {
   font-size: 15px;
   }
-  @media (min-width: 1025px) {
+  @media  ${Devices.desktop} {
     font-size: 17px;
   }
+`
+
+// FOOTER STYLING
+export const FooterContent = styled.footer`
+background-color: #ECB390;
 `
