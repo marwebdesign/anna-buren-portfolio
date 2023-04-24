@@ -8,7 +8,6 @@ export const Footer = () => {
   return (
     <FooterContent>
       <div>
-        <h1>HELLO?</h1>
         <button type="button" onClick={() => setLanguage('SWE')}>SWE</button>
         <button type="button" onClick={() => setLanguage('ENG')}>ENG</button>
       </div>

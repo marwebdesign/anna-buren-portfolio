@@ -11,10 +11,10 @@ export const MainSv = () => {
     <BrowserRouter>
       <NavbarSv />
       <Routes>
-        <Route path="/" element={<HomeSv />} />
-        <Route path="/about" element={<AboutSv />} />
-        <Route path="/portfolio" element={<PortfolioSv />} />
-        <Route path="/contact" element={<ContactSv />} />
+        <Route path="/homesv" element={<HomeSv />} />
+        <Route path="/aboutsv" element={<AboutSv />} />
+        <Route path="/portfoliosv" element={<PortfolioSv />} />
+        <Route path="/contactsv" element={<ContactSv />} />
       </Routes>
     </BrowserRouter>
   );
