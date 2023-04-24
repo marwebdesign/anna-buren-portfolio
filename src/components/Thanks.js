@@ -6,7 +6,6 @@ export const Thanks = () => {
   return (
     <div>
       <StartpageHeader>Thanks for sending me a message! Return to startpage <Link to="/">here</Link>
-
       </StartpageHeader>
     </div>
   )

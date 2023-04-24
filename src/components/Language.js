@@ -1,16 +1,16 @@
 
 import React, { useState } from 'react'
-import { FooterContent } from './Styling'
+import { LanguageContent } from './Styling'
 
-export const Footer = () => {
+export const Language = () => {
   const [language, setLanguage] = useState('SWE')
   console.log(language)
   return (
-    <FooterContent>
+    <LanguageContent>
       <div>
         <button type="button" onClick={() => setLanguage('SWE')}>SWE</button>
         <button type="button" onClick={() => setLanguage('ENG')}>ENG</button>
       </div>
-    </FooterContent>
+    </LanguageContent>
   )
 }

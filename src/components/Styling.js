@@ -154,6 +154,6 @@ cursor: pointer;
 `
 
 // FOOTER STYLING
-export const FooterContent = styled.footer`
+export const LanguageContent = styled.footer`
 background-color: #ECB390;
 `
