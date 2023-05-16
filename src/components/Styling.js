@@ -99,6 +99,22 @@ color: black;
   }
 `
 
+export const YouTube = styled.div`
+display: grid;
+grid-template-columns: 1fr;
+justify-items: center;
+  /* position: relative; */
+  overflow: hidden;
+  /* padding-top: 56.25%; 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+
+  /* @media ${Devices.tablet} {
+width: 60%
+  } 
+  @media ${Devices.laptop} {
+width: 70%
+  } */
+`
+
 // CONTACT STYLING
 export const Form = styled.form`
   /* display: flex;
@@ -110,10 +126,16 @@ export const Formwrapper = styled.div`
   background-color: #F5BA55;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 50%;
   border: 2px white solid;
   padding: 15px;
   border-radius: 7px;
+  @media ${Devices.tablet} {
+    width: 40%;
+  } 
+  @media ${Devices.laptop} {
+    width: 30%;
+  }
 `
 export const Input = styled.input`
   padding: 10px;
@@ -122,6 +144,12 @@ export const Input = styled.input`
   background: papayawhip;
   border: none;
   border-radius: 3px;
+  @media ${Devices.tablet} {
+color: green;
+  } 
+  @media ${Devices.laptop} {
+color: black;
+  }
 `
 export const Inputmessage = styled.input`
   padding: 10px;
@@ -130,6 +158,12 @@ export const Inputmessage = styled.input`
   background: papayawhip;
   border: none;
   border-radius: 3px;
+  @media ${Devices.tablet} {
+color: green;
+  } 
+  @media ${Devices.laptop} {
+color: black;
+  }
 `
 
 export const Label = styled.label`

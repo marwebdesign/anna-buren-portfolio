@@ -20,3 +20,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.video {
+  overflow: hidden;
+  border: 2px solid beige;
+  border-radius: 9px;
+  /* align-self: center;
+  position: absolute;
+  top: 0;
+  left: 0; */
+  width: 40%;
+  height: 100%;
+}
+
+/* @media (min-width: 668px) and (max-width: 1024px) {
+  .video {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .video {
+    width: 60%;
+    height: 60%;
+  }
+} */
